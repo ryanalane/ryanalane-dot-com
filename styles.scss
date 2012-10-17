@@ -1,0 +1,141 @@
+$red: rgb(142,0,29);
+$grey: rgb(66,66,66);
+$off_white: rgb(251,247,228);
+$sand: rgb(211,206,170);
+$moleskin_paper: rgb(231,232,209);
+
+$test_border_color: transparent;
+// $test_border_color: #000;
+$nav_border_color: $grey;
+$nav_bg_color: $moleskin_paper;
+$nav_text_color: $grey;
+
+$content_bg_color: $sand;
+$post_bg_color: $off_white;
+$post_border_color: $grey;
+
+body {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	a {
+		color: inherit;
+		background: inherit;
+		text-decoration: none;
+	}
+}
+
+$nav_width: 17.5em;
+
+div.nav {
+	$nav_box_shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+	position: fixed;
+	width: $nav_width;
+	height: 100%;
+	border-right: 1px $nav_border_color solid;
+	padding-top: 1.5em;
+	text-align: right;
+
+	color: $nav_text_color;
+	background: $nav_bg_color;
+
+	-moz-box-shadow: $nav_box_shadow;
+	-webkit-box-shadow: $nav_box_shadow;
+	box-shadow: $nav_box_shadow;
+
+	$site_title_font_size: 2.5em;
+	$site_title_letter_spacing: 0.2em;
+
+	#site_title {
+
+		font-family: Futura, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: $site_title_font_size;
+		letter-spacing: $site_title_letter_spacing;
+
+		color: #000;
+		background: inherit;
+
+		border: 1px $test_border_color solid;
+	}
+
+	ol {
+		font-family: "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	#site_sections {
+
+		margin-top: 0.5em;
+		padding-right: $site_title_letter_spacing * 2;
+
+		font-size: $site_title_font_size / 2;	
+		letter-spacing: 0.25em;
+
+		border: 1px $test_border_color solid;
+
+		li {
+			margin: 1.25em 0;	
+			border-bottom: 2px transparent solid;
+			padding-bottom: 0.15em;
+
+			&.active {
+				font-weight: bold;
+				color: #000;
+				background: inherit;
+			}
+
+			&:hover {
+				border-bottom: 2px $red solid;
+			}
+		}
+	}
+
+	#contact_points {
+		display: none;
+
+		letter-spacing: 0.1em;
+
+		.app_net {
+			font-weight: 100;
+			font-size: 1.5em;	
+		}
+	}
+
+}
+
+div#content {
+	color: inherit;	
+	background: $content_bg_color;
+	margin-left: $nav_width;
+	border: 1px $test_border_color solid;
+	line-height: 2em;
+	padding: 3.5em 6em;
+
+	.post {
+		$post_box_shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+		width: 35em;
+		padding: 1.75em 3em;
+		margin: 0 auto;
+		border: 1px $post_border_color solid;
+
+		-moz-box-shadow: $post_box_shadow;
+		-webkit-box-shadow: $post_box_shadow;
+		box-shadow: $post_box_shadow;
+
+		color: inherit;	
+		background: $post_bg_color;
+
+		.title {
+			font-family: Futura, Helvetica, sans-serif;
+			font-size: 1.25em;
+			margin: 0.25em 0 1em 0;
+		}
+
+		.description {
+			margin-bottom: 1em;	
+			font-style: italic;
+		}
+	}
+}

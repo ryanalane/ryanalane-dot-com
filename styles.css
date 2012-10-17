@@ -1,0 +1,76 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+  body a {
+    color: inherit;
+    background: inherit;
+    text-decoration: none; }
+
+div.nav {
+  position: fixed;
+  width: 17.5em;
+  height: 100%;
+  border-right: 1px #424242 solid;
+  padding-top: 1.5em;
+  text-align: right;
+  color: #424242;
+  background: #e7e8d1;
+  -moz-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3); }
+  div.nav #site_title {
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+    color: #000;
+    background: inherit;
+    border: 1px transparent solid; }
+  div.nav ol {
+    font-family: "Helvetica Neue", Helvetica, sans-serif; }
+  div.nav #site_sections {
+    margin-top: 0.5em;
+    padding-right: 0.4em;
+    font-size: 1.25em;
+    letter-spacing: 0.25em;
+    border: 1px transparent solid; }
+    div.nav #site_sections li {
+      margin: 1.25em 0;
+      border-bottom: 2px transparent solid;
+      padding-bottom: 0.15em; }
+      div.nav #site_sections li.active {
+        font-weight: bold;
+        color: #000;
+        background: inherit; }
+      div.nav #site_sections li:hover {
+        border-bottom: 2px #8e001d solid; }
+  div.nav #contact_points {
+    display: none;
+    letter-spacing: 0.1em; }
+    div.nav #contact_points .app_net {
+      font-weight: 100;
+      font-size: 1.5em; }
+
+div#content {
+  color: inherit;
+  background: #d3ceaa;
+  margin-left: 17.5em;
+  border: 1px transparent solid;
+  line-height: 2em;
+  padding: 3.5em 6em; }
+  div#content .post {
+    width: 35em;
+    padding: 1.75em 3em;
+    margin: 0 auto;
+    border: 1px #424242 solid;
+    -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: inherit;
+    background: #fbf7e4; }
+    div#content .post .title {
+      font-family: Futura, Helvetica, sans-serif;
+      font-size: 1.25em;
+      margin: 0.25em 0 1em 0; }
+    div#content .post .description {
+      margin-bottom: 1em;
+      font-style: italic; }
