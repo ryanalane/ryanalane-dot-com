@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Cambria, Georgia, "Times New Roman", Times, serif;
   color: inherit;
   background: #d3ceaa; }
   body a {
@@ -21,7 +21,6 @@ div.nav {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3); }
   div.nav #site_title {
     font-family: Futura, Helvetica, sans-serif;
-    font-weight: bold;
     font-size: 2.5em;
     letter-spacing: 0.2em;
     color: #000;
@@ -57,22 +56,40 @@ div#content {
   background: #d3ceaa;
   margin-left: 17.5em;
   line-height: 2em;
-  padding: 3.5em 6em; }
+  padding: 1.5em 3.5em 3.5em 2em; }
   div#content .post {
-    max-width: 32em;
-    padding: 1.75em 3em;
+    float: left;
+    max-width: 30em;
+    padding: 1.75em 5em;
     margin: 0 auto;
     border: 1px #424242 solid;
-    font-size: 1.25em;
+    font-size: 1.1em;
     -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
-    color: inherit;
+    color: #424242;
     background: #fbf7e4; }
     div#content .post .title {
-      font-family: Futura, Helvetica, sans-serif;
-      font-size: 1.25em;
-      margin: 0.25em 0 1em 0; }
-    div#content .post .description {
-      margin-bottom: 1em;
-      font-style: italic; }
+      font-family: "Lintel", Futura, Helvetica, sans-serif;
+      font-size: 2em;
+      margin-top: 0.25em;
+      margin-left: -0.5em;
+      padding-bottom: 0.1em;
+      padding-left: 0.5em;
+      letter-spacing: 0.25em;
+      color: black;
+      background: inherit;
+      border-bottom: 2px black solid; }
+    div#content .post p {
+      font-family: "Sanchez";
+      margin-bottom: 1.375em;
+      color: black;
+      line-height: 1.75em; }
+      div#content .post p.description {
+        margin: 1.75em 3em;
+        padding: 0.5em;
+        font-style: italic;
+        font-size: 0.9em;
+        color: black;
+        background: #e7e8d1;
+        font-family: "Banda Regular"; }

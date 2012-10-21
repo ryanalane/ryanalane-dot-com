@@ -16,7 +16,7 @@ $post_border_color: $grey;
 
 body {
 
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Cambria, Georgia, "Times New Roman", Times, serif;
 
 	color: inherit;
 	background: $content_bg_color;
@@ -53,7 +53,6 @@ div.nav {
 	#site_title {
 
 		font-family: Futura, Helvetica, sans-serif;
-		font-weight: bold;
 		font-size: $site_title_font_size;
 		letter-spacing: $site_title_letter_spacing;
 
@@ -112,34 +111,58 @@ div#content {
 	background: $content_bg_color;
 	margin-left: $nav_width;
 	line-height: 2em;
-	padding: 3.5em 6em;
+	padding: 1.5em 3.5em 3.5em 2em;
 
 	.post {
 
-		max-width: 32em;
-		padding: 1.75em 3em;
+		float: left;
+		max-width: 30em;
+		padding: 1.75em 5em;
 		margin: 0 auto;
 		border: 1px $post_border_color solid;
 
-		font-size: 1.25em;
+		font-size: 1.1em;
 
 		$post_box_shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow: $post_box_shadow;
 		-webkit-box-shadow: $post_box_shadow;
 		box-shadow: $post_box_shadow;
 
-		color: inherit;	
+		color: $grey;	
 		background: $post_bg_color;
 
 		.title {
-			font-family: Futura, Helvetica, sans-serif;
-			font-size: 1.25em;
-			margin: 0.25em 0 1em 0;
+			font-family: "Lintel", Futura, Helvetica, sans-serif;
+			font-size: 2em;
+			margin-top: 0.25em;
+
+			$left_indent: 0.5em;
+			margin-left: -$left_indent;
+			padding-bottom: 0.1em;
+			padding-left: $left_indent;
+			letter-spacing: 0.25em;
+			color: black;
+			background: inherit;
+			border-bottom: 2px black solid;
 		}
 
-		.description {
-			margin-bottom: 1em;	
-			font-style: italic;
+		p {
+			&.description {
+				margin: 1.75em 3em;	
+				padding: 0.5em;
+				font-style: italic;
+				font-size: 0.9em;
+				color: black;
+				background: $moleskin_paper;
+				font-family: "Banda Regular";
+			}
+
+			font-family: "Sanchez";
+
+			margin-bottom: 1.375em;
+			color: black;
+			line-height: 1.75em;
 		}
+
 	}
 }
