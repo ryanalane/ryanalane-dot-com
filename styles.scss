@@ -116,7 +116,9 @@ div#content {
 	.post {
 
 		float: left;
+		clear: both;
 		max-width: 30em;
+		min-width: 20em;
 		padding: 1.75em 5em;
 		margin: 0 auto;
 		border: 1px $post_border_color solid;

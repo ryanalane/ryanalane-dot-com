@@ -59,7 +59,9 @@ div#content {
   padding: 1.5em 3.5em 3.5em 2em; }
   div#content .post {
     float: left;
+    clear: both;
     max-width: 30em;
+    min-width: 20em;
     padding: 1.75em 5em;
     margin: 0 auto;
     border: 1px #424242 solid;
