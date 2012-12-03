@@ -20,7 +20,7 @@ div.nav {
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3); }
   div.nav #site_title {
-    font-family: Futura, Helvetica, sans-serif;
+    font-family: Georgia, Futura, Helvetica, sans-serif;
     font-size: 2.5em;
     letter-spacing: 0.2em;
     color: #000;
