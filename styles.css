@@ -57,7 +57,7 @@ div#content {
   margin-left: 17.5em;
   line-height: 2em;
   padding: 1.5em 3.5em 3.5em 2em; }
-  div#content .post {
+  div#content .post, div#content .project {
     float: left;
     clear: both;
     width: 30em;
@@ -70,7 +70,7 @@ div#content {
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
     color: #424242;
     background: #fbf7e4; }
-    div#content .post .title {
+    div#content .post .title, div#content .project .title {
       font-family: "Lintel", Futura, Helvetica, sans-serif;
       font-size: 2em;
       margin-top: 0.25em;
@@ -81,12 +81,12 @@ div#content {
       color: black;
       background: inherit;
       border-bottom: 2px black solid; }
-    div#content .post p {
+    div#content .post p, div#content .project p {
       font-family: "Sanchez";
       margin-bottom: 1.375em;
       color: black;
       line-height: 1.75em; }
-      div#content .post p.description {
+      div#content .post p.description, div#content .project p.description {
         margin: 1.75em 3em;
         padding: 0.5em;
         font-style: italic;
@@ -94,3 +94,33 @@ div#content {
         color: black;
         background: #e7e8d1;
         font-family: "Banda Regular"; }
+  div#content .project .tags {
+    margin: 0.25em 0;
+    font-family: Verdana, Tahoma, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    color: rgba(66, 66, 66, 0.6);
+    background: inherit; }
+    div#content .project .tags li {
+      display: inline-block;
+      margin-right: 0.25em; }
+  div#content .project p.description {
+    margin: 0.75em 0;
+    font-style: normal; }
+  div#content .project .links {
+    list-style-type: square;
+    margin-left: 2em;
+    font-size: 1em;
+    font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.1em; }
+    div#content .project .links li {
+      margin-bottom: 0.25em; }
+      div#content .project .links li a {
+        color: #8e001d;
+        background: inherit;
+        padding-bottom: 0.35em;
+        border-bottom: 0.1em solid transparent; }
+        div#content .project .links li a:hover {
+          border-bottom: 0.1em solid #424242; }
+        div#content .project .links li a.external {
+          font-style: italic; }

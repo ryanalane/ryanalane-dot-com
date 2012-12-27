@@ -1,11 +1,12 @@
 $red: rgb(142,0,29);
 $grey: rgb(66,66,66);
+$faded_grey: rgba(66,66,66, 0.6);
 $off_white: rgb(251,247,228);
 $sand: rgb(211,206,170);
 $moleskin_paper: rgb(231,232,209);
 
 $test_border_color: transparent;
-// $test_border_color: #000;
+// $test_border_color: black;
 $nav_border_color: $grey;
 $nav_bg_color: $moleskin_paper;
 $nav_text_color: $grey;
@@ -13,6 +14,9 @@ $nav_text_color: $grey;
 $content_bg_color: $sand;
 $post_bg_color: $off_white;
 $post_border_color: $grey;
+
+// Fonts
+$sans_serif_content_font_family: Verdana, Tahoma, Helvetica, sans-serif;
 
 body {
 
@@ -113,7 +117,7 @@ div#content {
 	line-height: 2em;
 	padding: 1.5em 3.5em 3.5em 2em;
 
-	.post {
+	.post, .project {
 
 		float: left;
 		clear: both;
@@ -163,6 +167,63 @@ div#content {
 			margin-bottom: 1.375em;
 			color: black;
 			line-height: 1.75em;
+		}
+
+	}
+
+	.project {
+
+		.tags {
+			margin: 0.25em 0;
+
+			font-family: $sans_serif_content_font_family;
+			letter-spacing: 0.1em;
+			font-size: 0.9em;
+
+			color: $faded_grey;
+			background: inherit;
+
+			li {
+				display: inline-block;
+				margin-right: 0.25em;
+			}
+
+		}
+
+		p.description {
+			margin: 0.75em 0;	
+			font-style: normal;
+		}
+
+		.links {
+
+			list-style-type: square;
+
+			margin-left: 2em;	
+
+			font-size: 1em;
+			font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+			letter-spacing: 0.1em;
+
+			li {
+				margin-bottom: 0.25em;
+
+				a {
+					color: $red;
+					background: inherit;
+					padding-bottom: 0.35em;
+
+					border-bottom: 0.1em solid transparent;
+
+					&:hover {
+						border-bottom: 0.1em solid $grey;
+					}
+
+					&.external {
+						font-style: italic;
+					}
+				}	
+			}
 		}
 
 	}
