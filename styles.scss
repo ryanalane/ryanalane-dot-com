@@ -151,6 +151,10 @@ div#content {
 			border-bottom: 2px black solid;
 		}
 
+		.content_body {
+			margin-top: 1.75em;	
+		}
+
 		p {
 			&.description {
 				margin: 1.75em 3em;	
@@ -161,8 +165,6 @@ div#content {
 				background: $moleskin_paper;
 				font-family: "Banda Regular";
 			}
-
-			font-family: "Sanchez";
 
 			margin-bottom: 1.375em;
 			color: black;

@@ -81,8 +81,9 @@ div#content {
       color: black;
       background: inherit;
       border-bottom: 2px black solid; }
+    div#content .post .content_body, div#content .project .content_body {
+      margin-top: 1.75em; }
     div#content .post p, div#content .project p {
-      font-family: "Sanchez";
       margin-bottom: 1.375em;
       color: black;
       line-height: 1.75em; }
