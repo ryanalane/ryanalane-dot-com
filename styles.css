@@ -3,8 +3,6 @@ body {
   color: inherit;
   background: #d3ceaa; }
   body a {
-    color: inherit;
-    background: inherit;
     text-decoration: none; }
 
 div.nav {
@@ -14,7 +12,7 @@ div.nav {
   border-right: 1px #424242 solid;
   padding-top: 1.5em;
   text-align: right;
-  color: #424242;
+  color: black;
   background: #e7e8d1;
   -moz-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -34,15 +32,15 @@ div.nav {
     font-size: 1.25em;
     letter-spacing: 0.25em;
     border: 1px transparent solid; }
-    div.nav #site_sections li {
+    div.nav #site_sections a li {
       margin: 1.25em 0;
       border-bottom: 2px transparent solid;
-      padding-bottom: 0.15em; }
-      div.nav #site_sections li.active {
-        font-weight: bold;
-        color: #000;
-        background: inherit; }
-      div.nav #site_sections li:hover {
+      padding-bottom: 0.15em;
+      color: black;
+      background: inherit; }
+      div.nav #site_sections a li.active {
+        font-weight: bold; }
+      div.nav #site_sections a li:hover {
         border-bottom: 2px #8e001d solid; }
   div.nav #contact_points {
     display: none;
@@ -57,6 +55,12 @@ div#content {
   margin-left: 17.5em;
   line-height: 2em;
   padding: 1.5em 3.5em 3.5em 2em; }
+  div#content a {
+    color: #8e001d;
+    background: inherit; }
+    div#content a:hover {
+      color: #8d8b83;
+      background: inherit; }
   div#content .post, div#content .project {
     float: left;
     clear: both;
@@ -100,7 +104,7 @@ div#content {
     font-family: Verdana, Tahoma, Helvetica, sans-serif;
     letter-spacing: 0.1em;
     font-size: 0.9em;
-    color: rgba(66, 66, 66, 0.6);
+    color: #424242;
     background: inherit; }
     div#content .project .tags li {
       display: inline-block;

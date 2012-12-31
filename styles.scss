@@ -1,6 +1,7 @@
 $red: rgb(142,0,29);
 $grey: rgb(66,66,66);
-$faded_grey: rgba(66,66,66, 0.6);
+$faded_grey: rgb(141, 139, 131);
+$black: black;
 $off_white: rgb(251,247,228);
 $sand: rgb(211,206,170);
 $moleskin_paper: rgb(231,232,209);
@@ -9,7 +10,7 @@ $test_border_color: transparent;
 // $test_border_color: black;
 $nav_border_color: $grey;
 $nav_bg_color: $moleskin_paper;
-$nav_text_color: $grey;
+$nav_text_color: $black;
 
 $content_bg_color: $sand;
 $post_bg_color: $off_white;
@@ -26,8 +27,6 @@ body {
 	background: $content_bg_color;
 
 	a {
-		color: inherit;
-		background: inherit;
 		text-decoration: none;
 	}
 }
@@ -80,19 +79,23 @@ div.nav {
 
 		border: 1px $test_border_color solid;
 
-		li {
-			margin: 1.25em 0;	
-			border-bottom: 2px transparent solid;
-			padding-bottom: 0.15em;
+		a {
 
-			&.active {
-				font-weight: bold;
-				color: #000;
+			li {
+				margin: 1.25em 0;	
+				border-bottom: 2px transparent solid;
+				padding-bottom: 0.15em;
+
+				color: $nav_text_color;
 				background: inherit;
-			}
 
-			&:hover {
-				border-bottom: 2px $red solid;
+				&.active {
+					font-weight: bold;
+				}
+				&:hover {
+					border-bottom: 2px $red solid;
+				}
+
 			}
 		}
 	}
@@ -116,6 +119,16 @@ div#content {
 	margin-left: $nav_width;
 	line-height: 2em;
 	padding: 1.5em 3.5em 3.5em 2em;
+
+	a {
+		color: $red;
+		background: inherit;
+
+		&:hover {
+			color: $faded_grey;
+			background: inherit;
+		}
+	}
 
 	.post, .project {
 
@@ -182,7 +195,7 @@ div#content {
 			letter-spacing: 0.1em;
 			font-size: 0.9em;
 
-			color: $faded_grey;
+			color: $grey;
 			background: inherit;
 
 			li {
